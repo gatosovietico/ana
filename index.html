@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Botón con doble marco</title>
+
+    <style>
+      
+        .marco-grande {
+            width: 1000px;
+            height: 570px;
+            border: 5px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto;
+            border-radius: 20px;
+            background-image: url("img/fondo.png"); /* Cambia el nombre */
+            background-size: cover;              /* Ajusta la imagen al marco */
+            background-position: center;         /* Centra la imagen */
+            background-repeat: no-repeat;        /* Evita repeticiones */
+        }
+        
+
+        .marco-pequeno {
+            width: 940px;
+            height: 500px;
+            border: 4px solid #555;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 30px;
+            border-radius: 15px;
+        }
+
+        .boton-circular {
+            width: 80px;
+            height: 50px;
+            background: #960c0c;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boton-circular:hover {
+            background: #de1f1f;
+        }
+
+
+        h1{
+            position: absolute;
+            color: #000000;
+            top: 250px;
+            right: 550px;
+            font-size: 50px;    
+        }
+    .logo {
+    position: absolute;   
+    top: 10px;           
+    left: 10px;          
+    width: 150px;         
+    height: auto;        
+    z-index: 1000;        
+}
+
+    </style>
+</head>
+<body>
+    <img src="https://cetis054.edu.mx/wp-content/uploads/2020/02/LogoCetis.png" class="logo">
+
+
+<div class="marco-grande">
+    <div class="marco-pequeno">
+        <h1><i>CULTURA DE PAZ</i></h1>
+        <button class="boton-circular"><a href="menu.html">Inicio</a></button>
+    </div>
+</div>
+
+</body>
+</html>

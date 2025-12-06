@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Cultura de Paz y Medio Ambiente</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Lato:wght@300;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: "Lato", sans-serif;
+            background-color: #faf6f6;
+            margin: 20px;
+        }
+
+        .marco-grande {
+            width: 750px;
+            margin: 20px auto;
+            padding: 25px;
+            border: 4px solid rgba(150,28,28,0.4);
+            border-radius: 15px;
+            background-color: rgba(255,230,230,0.7);
+        }
+
+        h2{text-align:center; font-family:"Merriweather", serif;}
+
+        label{
+            font-weight:bold;
+            margin-top:10px;
+            display:block;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            margin-bottom: 12px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            font-family:"Lato", sans-serif;
+        }
+
+        button{
+            width: 100%;
+            background:#960c0c;
+            color:white;
+            padding:12px;
+            border:none;
+            border-radius:50%;
+            font-size:16px;
+            cursor:pointer;
+            margin-top:10px;
+        }
+
+        button:hover{
+            background:#de1f1f;
+        }
+
+        .boton-regresar{
+            border-radius:10px;
+            margin-top:10px;
+        }
+
+    </style>
+
+    <script>
+        function enviarMensaje(){
+            alert("⚠️ Tu información fue enviada correctamente.\nPronto recibirás respuesta.");
+        }
+    </script>
+</head>
+<body>
+
+<div class="marco-grande">
+    <h2>Formulario Cultura de Paz y Medio Ambiente</h2>
+
+    <form action="https://formsubmit.co/homeroelgordoo@gmail.com" method="POST" onsubmit="enviarMensaje()">
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://google.com">
+
+        <label>Nombre completo</label>
+        <input type="text" name="Nombre" required placeholder="Escribe tu nombre">
+
+        <label>Correo electrónico</label>
+        <input type="email" name="Correo" required placeholder="ejemplo@gmail.com">
+
+        <label>Edad</label>
+        <input type="number" name="Edad" min="10" max="100" required placeholder="Tu edad">
+
+        <label>Grado o nivel educativo</label>
+        <select name="Grado" required>
+            <option value="">Selecciona</option>
+            <option>Primaria</option>
+            <option>Secundaria</option>
+            <option>Bachillerato</option>
+            <option>Universidad</option>
+            <option>Otro</option>
+        </select>
+
+        <label>La Cultura de Paz en la escuela (SEIEM)</label>
+        <textarea name="CulturaEscuela" rows="3" required placeholder="Tu opinión sobre la cultura de paz en la escuela..."></textarea>
+
+        <label>¿Cómo organizar un programa de reciclaje en tu comunidad?</label>
+        <textarea name="ReciclajeComunidad" rows="3" required placeholder="Describe cómo organizarías un programa de reciclaje..."></textarea>
+
+        <label>Las 7R´s de la economía circular y su relación con la Cultura de Paz</label>
+        <textarea name="EconomiaCircular" rows="3" required placeholder="Explica cómo se relacionan las 7R's con la Cultura de Paz..."></textarea>
+
+        <label>La Cultura de Paz como eje fundamental del Programa Cultura Comunitaria (Gobierno de México)</label>
+        <textarea name="CulturaComunitaria" rows="3" required placeholder="Comenta sobre su importancia..."></textarea>
+
+        <label>Derechos y obligaciones de los estudiantes / adolescentes</label>
+        <textarea name="DerechosObligaciones" rows="3" required placeholder="Menciona tus ideas sobre derechos y obligaciones..."></textarea>
+
+        <label>Relación de la Cultura de Paz con el cuidado del medio ambiente</label>
+        <textarea name="MedioAmbiente" rows="3" required placeholder="Explica la relación con el medio ambiente..."></textarea>
+
+        <label>Actividades que realizas para promover la paz</label>
+        <textarea name="ActividadesPaz" rows="3" required placeholder="Describe tus actividades, ejemplos, o proyectos..."></textarea>
+
+        <label>Ideas para mejorar la convivencia en tu escuela</label>
+        <textarea name="MejorarConvivencia" rows="3" required placeholder="Propón ideas para mejorar la convivencia escolar..."></textarea>
+
+        <label>Propuestas para fomentar el reciclaje en tu escuela o comunidad</label>
+        <textarea name="PropuestasReciclaje" rows="3" required placeholder="Escribe propuestas concretas..."></textarea>
+
+        <label>¿Qué valores crees que son esenciales para la Cultura de Paz?</label>
+        <textarea name="ValoresEsenciales" rows="3" required placeholder="Ej. respeto, empatía, cooperación..."></textarea>
+
+        <label>Comentarios adicionales</label>
+        <textarea name="ComentariosAdicionales" rows="3" placeholder="Cualquier comentario extra que quieras añadir..."></textarea>
+
+        <button type="submit">Enviar</button>
+        <button type="button" class="boton-regresar" onclick="history.back()">Regresar</button>
+    </form>
+</div>
+
+</body>
+</html>
